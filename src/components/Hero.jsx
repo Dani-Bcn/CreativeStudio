@@ -53,24 +53,11 @@ export default function Hero() {
       });
     });
   }, []);
- const [coco, setCoco] = useState(false);
 
-  const Girar = () => {
-    return (
-      <button
-        className="absolute z-150 bg-red-200 cursor-pointer w-25 h-25"
-        onClick={() => {
-          setCoco(!coco);
-          console.log("Girar", coco);
-        }}
-      >
-        Girar
-      </button>
-    );
-  };
+
   return (
     <main>
-      <Girar />
+    
       <m.div
         className="fixed inset-0 z-10 flex items-center justify-center "
         initial={{ opacity: 0 }}
@@ -79,11 +66,11 @@ export default function Hero() {
         transition={{ duration: 3, delay: 0.5 }}
       >
         <Canvas>
-          <Camera coco={coco} />
+          <Camera/>
           <ambientLight intensity={5} />
           <directionalLight position={[5, 5, 5]} />
           <Suspense fallback={null}>
-            <ObjectScene  coco={coco} />
+            <ObjectScene  />
           </Suspense>
         </Canvas>
       </m.div>
