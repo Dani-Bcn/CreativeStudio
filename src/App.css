@@ -1,0 +1,8 @@
+@import "tailwindcss";
+body{
+  height: 300vh;
+  scroll-behavior: smooth;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgb(48, 48, 48);
+}
