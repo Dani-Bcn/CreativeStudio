@@ -5,8 +5,6 @@ import { PerspectiveCamera } from "@react-three/drei";
 export default function Camera() {
   const cameraRef = useRef();
 
-
-
   useFrame((state, delta) => {
     if (!cameraRef.current) return;
 
