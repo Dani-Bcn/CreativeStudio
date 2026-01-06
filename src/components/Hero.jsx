@@ -1,7 +1,7 @@
 import { Suspense, useRef, useEffect,useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { ObjectScene } from "../scenes/ObjectScene";
+import { Capsula } from "../scenes/Capsula";
 import { motion as m } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,7 +70,7 @@ export default function Hero() {
           <ambientLight intensity={5} />
           <directionalLight position={[5, 5, 5]} />
           <Suspense fallback={null}>
-            <ObjectScene  />
+            <Capsula  />
           </Suspense>
         </Canvas>
       </m.div>
