@@ -1,5 +1,6 @@
 @import "tailwindcss";
 body{
+ 
   height: 300vh;
   scroll-behavior: smooth;
   padding-left: 50px;

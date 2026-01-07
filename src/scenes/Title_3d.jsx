@@ -4,8 +4,9 @@ import { useGLTF } from '@react-three/drei'
 export function Title_3d(props) {
   const { nodes, materials } = useGLTF('/models/main-title.glb')
   return (
-    <group {...props} dispose={null} scale={0.0015} position={[0,0,5]}>
+    <group receiveShadow {...props} dispose={null} scale={0.0015} position={[0,0,5]} castShadow>
       <mesh
+        
         name="Loft19"
         castShadow
         receiveShadow

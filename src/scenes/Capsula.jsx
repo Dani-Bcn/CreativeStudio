@@ -25,7 +25,7 @@ export function Capsula(props) {
     if (!mesh) return;
 
     gsap.to(mesh.material.color, {
-      r: 0,
+      r: 1,
       g: 0.5,
       b: 1,
       duration: 0.4,
@@ -37,7 +37,7 @@ export function Capsula(props) {
     if (!mesh) return;
 
     gsap.to(mesh.material.color, {
-      r: 0.7,
+      r: 5,
       g: 0.5,
       b: 0,
       duration: 0.4,
